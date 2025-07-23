@@ -1,5 +1,10 @@
 # Student Depression Analysis and Prediction using Machine Learning
 
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square)
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![EDA Stage](https://img.shields.io/badge/EDA-Univariate_Complete-orange?style=flat-square)
+![Status](https://img.shields.io/badge/Status-In_Progress-lightgrey?style=flat-square)
+
 This project focuses on analyzing and predicting student depression using machine learning techniques, supported by exploratory data analysis (EDA) and psychological, social, and academic factors. The goal is to derive insights and build a classification model that can help identify students potentially facing depression.
 
 ---
@@ -21,26 +26,6 @@ We’ve completed a structured univariate analysis of the following variables:
 
 ---
 
-## 📂 Project Structure
-```
-📁 Student_Depression_Analysis_and_Prediction
-├── student_depression_prediction.ipynb # Core notebook with EDA and ML (in progress)
-├── student_depression_dataset.csv # Dataset used for analysis
-├── LICENSE
-└── README.md
-```
-
-
----
-
-## 🧰 Libraries Used
-
-- `pandas`, `numpy`
-- `matplotlib`, `seaborn`
-- `scikit-learn` *(planned for modeling)*
-
----
-
 ## 📌 Objectives
 
 - Clean and explore the dataset
@@ -50,19 +35,24 @@ We’ve completed a structured univariate analysis of the following variables:
 
 ---
 
-## 🧠 Future Steps
+## 🧠 Upcoming Tasks
 
 - 🔜 Multivariate analysis  
-- 🔜 Correlation analysis  
-- 🔜 Feature engineering & encoding  
-- 🔜 Model training & evaluation  
-- 🔜 Interpretation and deployment
+- 🔜 Correlation heatmap  
+- 🔜 Feature engineering  
+- 🔜 Modeling & evaluation  
+- 🔜 Deployment (optional)
 
 ---
 
 ## 📜 License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+---
+
+> 🚧 This project is under active development. Stay tuned for more insights and model implementation!
+
 
 ---
 
