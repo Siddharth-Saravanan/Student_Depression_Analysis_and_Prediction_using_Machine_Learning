@@ -1,4 +1,6 @@
+<div align='center'>
 # Student Depression Analysis and Prediction using Machine Learning
+</div>
 
 ![pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![numpy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
