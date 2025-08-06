@@ -41,20 +41,6 @@ This project focuses on analyzing and predicting student depression using machin
 
 ---
 
-## 📊 Current Progress
-- ✅ **Data Cleaning**  
-  - Removed irrelevant features, handled missing values, encoded categorical variables, scaled numerical features, and split dataset for training/testing.  
-- ✅ **EDA**  
-  - Completed univariate analysis (age, gender, academic pressure, CGPA, sleep duration, suicidal thoughts, family history, dietary habits, etc.).  
-  - Completed bivariate analysis (14 questions including pivot-based grouped plots, stacked bars, heatmaps, and a lollipop plot).  
-- 🟡 **Model Building**  
-  - **Logistic Regression**:
-    - Scikit-learn baseline implemented and evaluated.
-    - Custom Logistic Regression built from scratch (gradient descent, loss, sigmoid).
-    - Performance validated (ROC-AUC = **0.92**, Accuracy = **84%**, F1 = **87%**).
-
----
-
 ## 📂 Project Structure
 ```
 Student-Depression-Analysis-and-Prediction-using-Machine-Learning/
@@ -71,8 +57,31 @@ Student-Depression-Analysis-and-Prediction-using-Machine-Learning/
 
 ---
 
+## ▶ How to Run
 
-## 🔑 Key Insights (from Bivariate Analysis)
+### **Requirements**
+- Python 3.9+
+- Libraries: `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`
+
+### **Steps**
+
+### 1) Clone the repository
+```bash
+git clone https://github.com/<your-username>/student-depression-prediction.git
+cd student-depression-prediction
+```
+
+### 2) Install dependencies
+```py
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost
+```
+### 3) Open the notebook
+```
+jupyter notebook notebooks/student_depression_analysis.ipynb
+```
+---
+
+## 🔑 Key Insights
 - **Gender vs Depression:** Slightly higher depression among males, but not significantly different.  
 - **Academic Pressure vs Depression:** Higher academic pressure shows clear association with increased depression.  
 - **Age + Financial Stress vs Depression:** Younger students (18–22) with high financial stress are more prone to depression.  
@@ -85,36 +94,39 @@ Student-Depression-Analysis-and-Prediction-using-Machine-Learning/
 
 ---
 
-## 🔜 Next Steps
-- Implement additional models (with scikit-learn comparison):
-  1. K-Nearest Neighbors (KNN)
-  2. Support Vector Machine (SVM)
-  3. Decision Tree
-  4. Random Forest
-  5. Gradient Boosting
-  6. Naive Bayes
-  7. Multi-Layer Perceptron (MLP)
-  8. XGBoost
-- Plot training/loss curves for models.
-- Create final summary visualizations:
-  - Accuracy vs Epoch (where applicable)
-  - ROC-AUC comparisons
-  - Final model comparison barplot (Custom vs scikit-learn)
-- Deploy the best-performing model as a lightweight app or API.
+## 📊 Final Results & Conclusion
+
+| Model                        | Train Accuracy | Test Accuracy | F1 Score | AUC  |
+|------------------------------|----------------|---------------|----------|------|
+| **Logistic Regression (Sklearn)** | 84.68% | **85.22%** | 87.51% | **0.924** |
+| **Custom Logistic Regression**    | 84.56% | 85.16% | **87.52%** | **0.924** |
+| Gradient Boosting            | 85.08%         | 85.13%        | 87.44%   | 0.923 |
+| Random Forest                | 100%           | 84.42%        | 86.81%   | 0.914 |
+| XGBoost                      | 91.53%         | 83.52%        | 86.09%   | 0.912 |
+| MLP                          | 88.53%         | 83.0%         | 85.52%   | 0.901 |
+| SVM (RBF)                    | 85.58%         | 84.64%        | 87.05%   | 0.912 |
+| KNN                          | 84.57%         | 83.76%        | 86.45%   | 0.909 |
+| Naive Bayes                  | 83.95%         | 83.90%        | 86.14%   | 0.918 |
+| Decision Tree                | 100%           | 76.50%         | 79.72%   | 0.760 |
+
+**Final Takeaway:** **Logistic Regression (Scikit-Learn)** and **Custom Logistic Regression** were the **best-performing models**, combining high accuracy, strong F1 score, and excellent AUC.
 
 ---
 
 ## 🔑 Key Visualizations
-![Correlation Heatmap](assets/plots/age_academic_heatmap.png)  
-![ROC Curve](assets/plots/logreg_roc.png)  
 
+### Depresssion Rate by Age and Academic Pressure - Heatmap
+![Correlation Heatmap](assets/plots/age_academic_heatmap.png)
+
+### Combined ROC Curve
+![Combined ROC Curve](assets/plots/combined_roc.png)
+
+### Model Performance Comparison
+![Model Comparison](assets/plots/grouped_bar_accf1.png)
 ---
 
 ## 📜 License
 This project is licensed under the [MIT License](./LICENSE).
 
 ---
-
-> 🚧 **Work in progress. More models and results coming soon!**
-
 
